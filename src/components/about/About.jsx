@@ -2,8 +2,8 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/about_me.png'
 import { BsFillAwardFill } from 'react-icons/bs'
-import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { IoSchool } from 'react-icons/io5'
 
 const About = () => {
     return (
@@ -25,9 +25,9 @@ const About = () => {
                             <small> 3+ Year Study</small>
                         </article>
                         <article className='about__card'>
-                            <FiUsers className='about__icon' />
-                            <h5>Clients</h5>
-                            <small>200+ Worldwide</small>
+                            <IoSchool className='about__icon' />
+                            <h5>Education</h5>
+                            <small>University of Science and Technology Da Nang</small>
                         </article>
                         <article className='about__card'>
                             <VscFolderLibrary className='about__icon' />

@@ -1,7 +1,7 @@
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 35% 65%;
+    gap: 10%;
 }
 
 .about__me {
@@ -70,6 +70,7 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
+
 
 /* =======================MEDIA QUERIES (MEDIA DEVICES)======================= */
 @media screen and (max-width: 1024px) {
