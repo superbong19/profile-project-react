@@ -26,8 +26,8 @@ const Nav = () => {
             case '#services':
                 document.title = 'Services'
                 break;
-            case '#contact':
-                document.title = 'Contact'
+            case '#portfolio':
+                document.title = 'portfolio'
                 break;
         }
     }, [actived])
@@ -75,9 +75,9 @@ const Nav = () => {
 
             {/* START--contactNav */}
             <a
-                href="#contact"
-                className={actived === '#contact' ? 'active' : ''}
-                onClick={(e) => handleChange('#contact')}
+                href="#portfolio"
+                className={actived === '#portfolio' ? 'active' : ''}
+                onClick={(e) => handleChange('#portfolio')}
             >
                 <MdOutlineContactSupport />
             </a>
