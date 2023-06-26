@@ -4,12 +4,33 @@ import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
 import { BiSolidBook } from 'react-icons/bi'
 import { LuHeartHandshake } from 'react-icons/lu'
 import { MdOutlineContactSupport } from 'react-icons/md'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 const Nav = () => {
+
     const [actived, setActived] = useState('#')
     function handleChange(hrefNav) {
         setActived(hrefNav)
     }
+
+    useEffect(() => {
+        switch (actived) {
+            case '#':
+                document.title = 'Home'
+                break;
+            case '#about':
+                document.title = 'About me'
+                break;
+            case '#experience':
+                document.title = 'My Experience'
+                break;
+            case '#services':
+                document.title = 'Services'
+                break;
+            case '#contact':
+                document.title = 'Contact'
+                break;
+        }
+    }, [actived])
     return (
         <nav>
             {/* START--homeNav */}
